@@ -47,6 +47,7 @@ In this repo, we will release (**updating**):
 You only need to prepare an empty conda environment with Python 3 (reference version: Python 3.8.20) and `pip install` the `requirements.txt` file in this directory.
 ```sh
 conda create --name csr python=3.8.20
+conda activate csr
 pip install -r requirements.txt
 ```
 
@@ -142,7 +143,7 @@ python ./retrieval/compute_metrics.py --topk 8
 ```
 
 ## Text Representation
-We focus on three kinds of tasks for comparison: **Text Classification**, **Text Clustering** and **Text Retrieval**. First, please move to our `text_representation` codebase directory.
+We focus on three kinds of tasks for evaluation: **Text Classification**, **Text Clustering** and **Text Retrieval**. First, please move to our `text_representation` codebase directory.
 ```sh
 cd ./Text
 ```
@@ -161,7 +162,7 @@ We download these datasets from hugging face to `./datasets` directory. You can 
 └── train.jsonl
 ```
 #### Get embeddings
-You can get  our pre-computed [NV-Embed-v2](https://huggingface.co/nvidia/NV-Embed-v2) embeddings from [Dataset Link](https://huggingface.co/datasets/W1nd-navigator/CSR-precompute-embeds). Or you can use `./get_embeddings/get_classification_embeddings.py` to generate your own embeddings.
+You can get our pre-computed [NV-Embed-v2](https://huggingface.co/nvidia/NV-Embed-v2) embeddings from [Dataset Link](https://huggingface.co/datasets/W1nd-navigator/CSR-precompute-embeds). Or you can use `./get_embeddings/get_classification_embeddings.py` to generate your own embeddings.
 ```sh
 cd get_embeddings/
 python get_classification_embeddings.py \
@@ -380,7 +381,6 @@ If you find this work useful, please cite the accompanying paper:
     author={Tiansheng Wen and Yifei Wang and Zequn Zeng and Zhong Peng and Yudi Su and Xinyang Liu and Bo Chen and Hongwei Liu and Stefanie Jegelka and Chenyu You},
     booktitle={International Conference on Machine Learning},
     year={2025}
-}
 }
 ```
 ### Acknowledgements
