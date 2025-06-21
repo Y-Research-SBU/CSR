@@ -36,7 +36,7 @@
   <a href="https://icml.cc/virtual/2025/oral/47166">
     <img src="https://img.shields.io/badge/▶%20Poster%20/%20Video-ICML-blue?style=flat-square" alt="Poster & Video">
   </a>
-  <a href="https://huggingface.co/tomaarsen/models">
+  <a href="https://drive.google.com/drive/folders/1fI4ip-tcjSrmXtFANmIDTh1wERPlfySO">
     <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow?style=flat-square&logo=huggingface" alt="Hugging Face Model">
   </a>
   <img src="https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch" alt="PyTorch 2.0">
