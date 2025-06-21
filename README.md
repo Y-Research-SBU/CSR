@@ -1,4 +1,10 @@
-#  [Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation](http://arxiv.org/abs/2503.01776) [ICML 2025 Oral]
+<div align="center">
+
+<h2>Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation</h2>
+<h4>🌟 ICML 2025 Oral 🌟</h4>
+</div>
+
+<br>
 <div align="center"style="font-family: charter; font-size: x-small;">
 	<a href="https://neilwen987.github.io/" target="_blank">Tiansheng Wen*</a><sup>1,2</sup>,</span>
 	<a href="https://yifeiwang77.com/" target="_blank">Yifei Wang*</a><sup>3</sup>,</span>
@@ -22,9 +28,19 @@
 
 <br>
 <div align='center'>
-<a href='https://arxiv.org/abs/2503.01776'><img alt="Static Badge" src="https://img.shields.io/badge/arXiv-CSR-red?logo=arxiv" height="20""></a>
-<a href="https://x.com/yifeiwang77/status/1897023662328611062"><img src='https://img.shields.io/badge/Twitter-CSR-blue?logo=x' height="20"></a>
-<br>
+
+<p>
+  <a href="https://arxiv.org/abs/2503.01776">
+    <img src="https://img.shields.io/badge/💡%20Paper-ICML (oral)-red?style=flat-square" alt="Paper">
+  </a>
+  <a href="https://icml.cc/virtual/2025/oral/47166">
+    <img src="https://img.shields.io/badge/▶%20Poster%20/%20Video-ICML-blue?style=flat-square" alt="Poster & Video">
+  </a>
+  <a href="https://huggingface.co/tomaarsen/models">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Model-yellow?style=flat-square&logo=huggingface" alt="Hugging Face Model">
+  </a>
+  <img src="https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch" alt="PyTorch 2.0">
+</p>
 <br>
 
 ![Overview](./assets/overview.jpg)
