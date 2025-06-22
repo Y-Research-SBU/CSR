@@ -41,7 +41,6 @@
   </a>
   <img src="https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch" alt="PyTorch 2.0">
 </p>
-<br>
 
 ![Overview](./assets/overview.jpg)
 </div>
