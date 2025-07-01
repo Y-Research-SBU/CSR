@@ -54,6 +54,7 @@
 In this paper, we show that *sparse coding* offers a compelling alternative for achieving adaptive representation with minimal overhead and higher fidelity. We propose **C**ontrastive **S**parse **R**epresentation, a method that sparsifies pre-trained embeddings into a high-dimensional but *selectively activated* feature space. By leveraging lightweight autoencoding and task-aware contrastive objectives, CSR preserves semantic quality while allowing flexible, cost-effective inference at different sparsity levels. Extensive experiments on image, text, and multimodal benchmarks demonstrate that CSR consistently outperforms MRL in terms of both accuracy and retrieval speed-often by large margins-while also cutting training time to a fraction of that required by MRL. Our results establish sparse coding as a powerful paradigm for adaptive representation learning in real-world applications where efficiency and fidelity are both paramount. 
 
 ## &#x1F680; &#x1F680; News
+- 2025.07.01 [Our models](https://huggingface.co/Y-Research-Group) can be loaded with [Sentence_Transformers](https://github.com/UKPLab/sentence-transformers) now! &#x1F601;&#x1F601;
 - 2025.06.06 [More model checkpoints](https://drive.google.com/drive/folders/1KNidBRzChAg3g4MuTO7K8Hz46HiGz0rv) are released!! &#x1F601;&#x1F601;
 - 2025.05.25 **Major Update**. We have thoroughly reorganized our repository with the following changes: 🎉🎉
   - Minor code changes on Visual Experiments, especially dataset preparation.
@@ -87,8 +88,28 @@ In this repo, we will release (**updating**):
     - Training &#x2705;
     - Evaluation &#x2705;
   - Retrieval Time Evaluation &#x2705;
-- loading CSR with [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) &#x1F4CC;
+- loading CSR with [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) &#x2705;
+- fit CSR into Sentence Transformers `SparseEncoder` v5.0.0 release &#x1F4CC;
 
+## Load our checkpoints with Sentence Transformers
+You can load [our models](https://huggingface.co/Y-Research-Group) with [Sentence Transfomers](https://github.com/UKPLab/sentence-transformers) now. Here is an example on how to evaluate our models on MTEB with sentence_transformers:
+```python
+import mteb
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer(
+    "Y-Research-Group/CSR-NV_Embed_v2-Classification-Banking77",
+    trust_remote_code=True
+)
+model.prompts = {
+    "Banking77Classification": "Instruct: Given a online banking query, find the corresponding intents\nQuery:"
+}
+task = mteb.get_tasks(tasks=["Banking77Classification"])
+evaluation = mteb.MTEB(tasks=task)
+evaluation.run(model, eval_splits=["test"], output_folder="./results/Banking77Classification", 
+               batch_size=32, show_progress_bar=True)
+```
+
+Currently we are investigating into [the v5.0.0 release](https://github.com/UKPLab/sentence-transformers/releases/tag/v5.0.0) of Sentence Transformer so that our CSRs will catch up with the latest `SparseEncoder` update.
 ## Set up
 You only need to prepare an empty conda environment with Python 3 (reference version: Python 3.8.20) and `pip install` the `requirements.txt` file in this directory.
 ```sh
@@ -419,7 +440,7 @@ python main_multimodal.py eval \
     --rep_dim 1024
 ```
 
-### Citing this paper
+## Citing this paper
 If you find this work useful, please cite the accompanying paper:
 ```
 @inproceedings{wen2025matryoshkarevisitingsparsecoding,
