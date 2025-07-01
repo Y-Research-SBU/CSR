@@ -46,7 +46,6 @@
     <img src="https://img.shields.io/badge/Hugging%20Face%20Blog-Sparse%20Encoder-ff69b4?style=flat-square&logo=huggingface" alt="Hugging Face Blog">
   </a>
 </div>
-<!--   <img src="https://img.shields.io/badge/PyTorch-2.1-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch 2.1">
 
 ![Overview](./assets/overview.jpg)
 </div>
