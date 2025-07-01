@@ -29,7 +29,7 @@
 <br>
 <div align='center'>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; line-height: 2; max-width: 600px; margin: auto;">
+<div style="display: grid; grid-template-columns: repeat(3, auto); gap: 10px; justify-content: center; align-items: center; max-width: 680px; margin: auto;">
   <a href="https://arxiv.org/abs/2503.01776">
     <img src="https://img.shields.io/badge/💡%20Paper-arXiv-blue?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
   </a>
@@ -47,7 +47,6 @@
   </a>
   <img src="https://img.shields.io/badge/PyTorch-2.1-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch 2.1">
 </div>
-<br>
 
 ![Overview](./assets/overview.jpg)
 </div>
