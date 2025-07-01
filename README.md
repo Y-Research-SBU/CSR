@@ -29,7 +29,7 @@
 <br>
 <div align='center'>
 
-<div style="display: grid; grid-template-columns: repeat(3, auto); gap: 10px; justify-content: center; align-items: center; max-width: 680px; margin: auto;">
+<p>
   <a href="https://arxiv.org/abs/2503.01776">
     <img src="https://img.shields.io/badge/💡%20Paper-arXiv-blue?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
   </a>
@@ -45,7 +45,7 @@
   <a href="https://huggingface.co/blog/train-sparse-encoder">
     <img src="https://img.shields.io/badge/Hugging%20Face%20Blog-Sparse%20Encoder-ff69b4?style=flat-square&logo=huggingface" alt="Hugging Face Blog">
   </a>
-</div>
+</p>
 
 ![Overview](./assets/overview.jpg)
 </div>
