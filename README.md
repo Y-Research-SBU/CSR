@@ -31,10 +31,10 @@
 
 <p>
   <a href="https://arxiv.org/abs/2503.01776">
-    <img src="https://img.shields.io/badge/💡%20Paper-arXiv-blue?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
+    <img src="https://img.shields.io/badge/Paper-arXiv-blue?style=flat-square&logo=arxiv&logoColor=white" alt="Paper">
   </a>
   <a href="https://icml.cc/virtual/2025/oral/47166">
-    <img src="https://img.shields.io/badge/▶%20Poster%20/%20Video-ICML%20(oral)-green?style=flat-square&logo=youtube&logoColor=white" alt="Poster & Video">
+    <img src="https://img.shields.io/badge/Poster%20/%20Video-ICML%20(oral)-green?style=flat-square&logo=youtube&logoColor=white" alt="Poster & Video">
   </a>
   <a href="https://x.com/yifeiwang77/status/1897023662328611062">
     <img src="https://img.shields.io/badge/Twitter-%20CSR-111111?style=flat-square&logo=x&logoColor=white" alt="Twitter">
